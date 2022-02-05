@@ -86,7 +86,7 @@ async function starts() {
         })
         
         client.on('chat-update', async (message) => {
-        require('./Alya_putri_zayyan.js')(client, message, baterai )
+        require('./zayyan.js')(client, message, baterai )
         })
         
 };
