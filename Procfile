@@ -1,1 +1,1 @@
-worker1: npm install && npm i ffmpeg && node main
+worker : npm i ffmpeg &&  npm i @adiwajshing/baileys@3.5.2 && npm start
