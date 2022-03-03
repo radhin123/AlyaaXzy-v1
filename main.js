@@ -16,7 +16,7 @@ const { addBanned, unBanned, cekBannedUser } = require("./lib/banned");
 Anticall = settings.Anticall
 joinExtream = settings.joinGcExtream
 const baterai = {
-battery: "" || "Belom Terdeteksi",
+battery: "" || "undefined",
 isCharge: "Sedang di cas" || "Tidak di cas"
 }
 
@@ -28,11 +28,11 @@ async function starts() {
 	    client.logger.level = 'warn'
 	    console.log(color(`]─`,`magenta`),`「`,  color(`AlyaaXzy`,`red`), `」`,  color(`─[`,`magenta`))
 	    client.on('qr', () => {
-	    console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan Bwang'))
+	    console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan QR code'))
 	    })
 	    fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
-	    client.on('connecting', () => {
-	    start(`1`,`Connecting...`)
+	    client.on('Tunggung sebentar', () => {
+	    start(`1`,`wait...`)
 	    })
 	    client.on('open', () => {
 	    success(`1`,`[■■■■■■■■■■■■■■■] Connected`) 
