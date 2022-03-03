@@ -1,1 +1,1 @@
-worker : npm i && npm i ffmpeg &&  npm i libwebp && node main
+worker : npm i && npm i ffmpeg && && node main
