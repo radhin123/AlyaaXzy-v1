@@ -1,1 +1,1 @@
-worker : npm i && npm i ffmpeg && && node main
+worker : npm i && npm i ffmpeg && node main
