@@ -32,7 +32,7 @@ async function starts() {
 	    client.on('qr', () => {
 	    console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan '))
 	    })
-	    fs.existsSync('./QRnya.json') && client.loadAuthInfo('./QRnya.json')
+	    fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 	    client.on('connecting', () => {
 	    start(`1`,`Connecting...`)
 	    })
